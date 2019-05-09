@@ -32,7 +32,7 @@ animationData (ManuallySized renderable imgWidth imgHeight) = do
       frameSet = map (\x -> (x # bg white, timediff)) frames
 
   -- Write the image.
-  let filename = ".ihaskell-diagram.gif"
+  let filename = "/var/lib/jupyter/.ihaskell-diagram.gif"
       diagOpts = DiagramOpts
         { _width = Just . ceiling $ imgWidth
         , _height = Just . ceiling $ imgHeight

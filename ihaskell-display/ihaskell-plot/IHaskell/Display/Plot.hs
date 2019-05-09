@@ -24,7 +24,7 @@ figureData figure format = do
       h = size
 
   -- Write the image.
-  let fname = ".ihaskell-plot." ++ extension format
+  let fname = "/var/lib/jupyter/.ihaskell-plot." ++ extension format
   writeFigure format fname (w, h) figure
 
   -- Read back, and convert to base64.

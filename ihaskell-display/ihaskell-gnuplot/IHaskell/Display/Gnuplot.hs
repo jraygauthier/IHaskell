@@ -59,7 +59,7 @@ instance IHaskellDisplay M.T where
     return $ Display [pngDisp, svgDisp]
 
 -- Filename
-name = ".ihaskell-gnuplot."
+name = "/var/lib/jupyter/.ihaskell-gnuplot."
 
 -- Width and height
 w = 300

@@ -25,7 +25,7 @@ diagramData (ManuallySized renderable imgWidth imgHeight) format = do
   switchToTmpDir
 
   -- Write the image.
-  let filename = ".ihaskell-diagram." ++ extension format
+  let filename = "/var/lib/jupyter/.ihaskell-diagram." ++ extension format
   renderCairo filename (mkSizeSpec2D (Just imgWidth)
                                      (Just imgHeight)) renderable
 

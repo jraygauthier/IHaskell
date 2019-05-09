@@ -30,7 +30,7 @@ chartData renderable format = do
   switchToTmpDir
 
   -- Write the PNG image.
-  let filename = ".ihaskell-chart.png"
+  let filename = "/var/lib/jupyter/.ihaskell-chart.png"
       opts = def { _fo_format = format, _fo_size = (width, height) }
   renderableToFile opts filename renderable
 
