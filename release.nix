@@ -76,4 +76,12 @@ nixpkgs.buildEnv {
       fi
     done
   '';
+
+  passthru = {
+    inherit ihaskellEnv;
+    inherit jupyterlab;
+    inherit ihaskellSh;
+    ihaskellJsFile = ./. + "/html/kernel.js";
+    ihaskellLogo64 = ./. + "/html/logo-64x64.svg";
+  };
 }
